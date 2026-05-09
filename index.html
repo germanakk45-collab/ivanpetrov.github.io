@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hub — AI-инструменты и большие разборы простым языком</title>
+    <meta name="description" content="Каталог полезных нейросетей, подробные обзоры, гайды и подборки для тех, кто хочет применять AI в работе, учебе и бизнесе.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">AI Hub</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Главная</a></li>
+                    <li><a href="tools.html" class="nav-link">Инструменты</a></li>
+                    <li><a href="articles.html" class="nav-link">Статьи</a></li>
+                    <li><a href="about.html" class="nav-link">О проекте</a></li>
+                    <li><a href="contact.html" class="nav-link nav-link--highlight">Telegram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    AI-инструменты и большие разборы<br>простым языком
+                </h1>
+                <p class="hero-subtitle">
+                    Каталог полезных нейросетей, подробные обзоры, гайды и подборки для тех, кто хочет применять AI в работе, учебе и бизнесе.
+                </p>
+                <div class="hero-actions">
+                    <a href="tools.html" class="btn btn--primary">Смотреть инструменты</a>
+                    <a href="articles.html" class="btn btn--secondary">Читать статьи</a>
+                    <a href="contact.html" class="btn btn--outline">Telegram</a>
+                </div>
+                <div class="hero-search">
+                    <div class="search-box">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </svg>
+                        <input type="text" class="search-input" id="heroSearch" placeholder="Поиск по инструментам и статьям...">
+                        <button class="search-btn" id="heroSearchBtn">Найти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Tools Section -->
+    <section class="section section--tools">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Популярные AI-инструменты</h2>
+                <p class="section-desc">Самые востребованные нейросети, которые уже используют тысячи людей</p>
+                <a href="tools.html" class="section-link">Все инструменты →</a>
+            </div>
+            <div class="tools-grid" id="popularTools">
+                <!-- Tools will be loaded via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles Section -->
+    <section class="section section--articles">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Последние статьи</h2>
+                <p class="section-desc">Глубокие материалы, которые помогут разобраться в AI</p>
+                <a href="articles.html" class="section-link">Все статьи →</a>
+            </div>
+            <div class="articles-grid" id="latestArticles">
+                <!-- Articles will be loaded via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="section section--collections">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Подборки</h2>
+                <p class="section-desc">Готовые списки инструментов под конкретные задачи</p>
+            </div>
+            <div class="collections-grid">
+                <a href="articles.html" class="collection-card">
+                    <div class="collection-icon">📝</div>
+                    <h3 class="collection-title">AI для текста</h3>
+                    <p class="collection-desc">Нейросети для написания, редактуры и анализа текстов</p>
+                    <span class="collection-count">8 инструментов</span>
+                </a>
+                <a href="articles.html" class="collection-card">
+                    <div class="collection-icon">🎨</div>
+                    <h3 class="collection-title">AI для дизайна</h3>
+                    <p class="collection-desc">Генерация изображений, редактура и визуальный контент</p>
+                    <span class="collection-count">6 инструментов</span>
+                </a>
+                <a href="articles.html" class="collection-card">
+                    <div class="collection-icon">🎬</div>
+                    <h3 class="collection-title">AI для видео</h3>
+                    <p class="collection-desc">Создание и монтаж видео с помощью нейросетей</p>
+                    <span class="collection-count">5 инструментов</span>
+                </a>
+                <a href="articles.html" class="collection-card">
+                    <div class="collection-icon">📊</div>
+                    <h3 class="collection-title">AI для маркетинга</h3>
+                    <p class="collection-desc">Инструменты для продвижения, аналитики и контента</p>
+                    <span class="collection-count">7 инструментов</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Telegram CTA Section -->
+    <section class="section section--telegram">
+        <div class="container">
+            <div class="telegram-block">
+                <div class="telegram-content">
+                    <div class="telegram-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </div>
+                    <h2 class="telegram-title">Быстрые находки в Telegram</h2>
+                    <p class="telegram-desc">
+                        Короткие новости, быстрые заметки и полезные находки публикуются в Telegram-канале. 
+                        Подпишитесь, чтобы не пропустить свежие AI-инструменты и лайфхаки.
+                    </p>
+                    <a href="https://t.me/your_channel" target="_blank" class="btn btn--telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                        Перейти в Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">AI Hub</span>
+                    </a>
+                    <p class="footer-desc">Каталог AI-инструментов и большие разборы простым языком для СНГ-аудитории.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Разделы</h4>
+                    <ul class="footer-links">
+                        <li><a href="tools.html">Инструменты</a></li>
+                        <li><a href="articles.html">Статьи</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="contact.html">Telegram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://t.me/your_channel" target="_blank">Telegram-канал</a></li>
+                        <li><a href="mailto:hello@aihub.ru">hello@aihub.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 AI Hub. Все материалы созданы для помощи в освоении AI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data/tools.js"></script>
+    <script src="data/articles.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Load popular tools on homepage
+        document.addEventListener('DOMContentLoaded', function() {
+            renderPopularTools();
+            renderLatestArticles();
+
+            // Hero search
+            const heroSearch = document.getElementById('heroSearch');
+            const heroSearchBtn = document.getElementById('heroSearchBtn');
+
+            function doHeroSearch() {
+                const query = heroSearch.value.trim();
+                if (query) {
+                    window.location.href = 'tools.html?search=' + encodeURIComponent(query);
+                }
+            }
+
+            heroSearchBtn.addEventListener('click', doHeroSearch);
+            heroSearch.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') doHeroSearch();
+            });
+        });
+    </script>
+</body>
+</html>

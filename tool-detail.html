@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="toolDetailTitle">Обзор инструмента — AI Hub</title>
+    <meta name="description" content="Подробный обзор AI-инструмента: функции, плюсы, минусы, аналоги и итоговая оценка.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">AI Hub</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="tools.html" class="nav-link active">Инструменты</a></li>
+                    <li><a href="articles.html" class="nav-link">Статьи</a></li>
+                    <li><a href="about.html" class="nav-link">О проекте</a></li>
+                    <li><a href="contact.html" class="nav-link nav-link--highlight">Telegram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Tool Detail -->
+    <article class="tool-detail" id="toolDetail">
+        <div class="container">
+            <div class="tool-detail-header">
+                <div class="tool-detail-badges">
+                    <span class="badge badge--category" id="toolCategory">Категория</span>
+                    <span class="badge badge--price" id="toolPrice">Цена</span>
+                </div>
+                <h1 class="tool-detail-title" id="toolName">Название инструмента</h1>
+                <p class="tool-detail-subtitle" id="toolShortDesc">Краткое описание инструмента</p>
+                <div class="tool-detail-actions">
+                    <a href="#" class="btn btn--primary" id="toolLink" target="_blank">Перейти на сайт</a>
+                    <a href="tools.html" class="btn btn--secondary">← Все инструменты</a>
+                </div>
+            </div>
+
+            <div class="tool-detail-grid">
+                <div class="tool-detail-main">
+                    <div class="tool-section">
+                        <h2 class="tool-section-title">Для кого подходит</h2>
+                        <p class="tool-section-text" id="toolAudience">Описание целевой аудитории</p>
+                    </div>
+
+                    <div class="tool-section">
+                        <h2 class="tool-section-title">Основные функции</h2>
+                        <ul class="tool-list" id="toolFeatures">
+                            <!-- Features via JS -->
+                        </ul>
+                    </div>
+
+                    <div class="tool-section">
+                        <h2 class="tool-section-title">Плюсы</h2>
+                        <ul class="tool-list tool-list--pros" id="toolPros">
+                            <!-- Pros via JS -->
+                        </ul>
+                    </div>
+
+                    <div class="tool-section">
+                        <h2 class="tool-section-title">Минусы</h2>
+                        <ul class="tool-list tool-list--cons" id="toolCons">
+                            <!-- Cons via JS -->
+                        </ul>
+                    </div>
+
+                    <div class="tool-section">
+                        <h2 class="tool-section-title">Аналоги</h2>
+                        <p class="tool-section-text" id="toolAlternatives">Список аналогов</p>
+                    </div>
+
+                    <div class="tool-section tool-section--rating">
+                        <h2 class="tool-section-title">Итоговая оценка</h2>
+                        <div class="rating-block">
+                            <div class="rating-score" id="toolRating">4.5</div>
+                            <div class="rating-stars" id="toolStars">★★★★☆</div>
+                            <p class="rating-text" id="toolRatingText">Отличный инструмент для повседневных задач</p>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="tool-detail-sidebar">
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">Информация</h3>
+                        <div class="sidebar-info">
+                            <div class="sidebar-row">
+                                <span class="sidebar-label">Категория</span>
+                                <span class="sidebar-value" id="sidebarCategory">—</span>
+                            </div>
+                            <div class="sidebar-row">
+                                <span class="sidebar-label">Цена</span>
+                                <span class="sidebar-value" id="sidebarPrice">—</span>
+                            </div>
+                            <div class="sidebar-row">
+                                <span class="sidebar-label">Сайт</span>
+                                <a href="#" class="sidebar-value sidebar-link" id="sidebarLink" target="_blank">—</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Similar Tools -->
+            <div class="tool-section tool-section--similar">
+                <h2 class="tool-section-title">Похожие инструменты</h2>
+                <div class="tools-grid" id="similarTools">
+                    <!-- Similar tools via JS -->
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">AI Hub</span>
+                    </a>
+                    <p class="footer-desc">Каталог AI-инструментов и большие разборы простым языком для СНГ-аудитории.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Разделы</h4>
+                    <ul class="footer-links">
+                        <li><a href="tools.html">Инструменты</a></li>
+                        <li><a href="articles.html">Статьи</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="contact.html">Telegram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://t.me/your_channel" target="_blank">Telegram-канал</a></li>
+                        <li><a href="mailto:hello@aihub.ru">hello@aihub.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 AI Hub. Все материалы созданы для помощи в освоении AI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data/tools.js"></script>
+    <script src="data/articles.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            renderToolDetail();
+        });
+    </script>
+</body>
+</html>

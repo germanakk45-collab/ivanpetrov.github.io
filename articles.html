@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статьи — AI Hub</title>
+    <meta name="description" content="Длинные статьи, гайды, обзоры, подборки и сравнения AI-инструментов. Глубокие материалы для практического применения.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">AI Hub</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="tools.html" class="nav-link">Инструменты</a></li>
+                    <li><a href="articles.html" class="nav-link active">Статьи</a></li>
+                    <li><a href="about.html" class="nav-link">О проекте</a></li>
+                    <li><a href="contact.html" class="nav-link nav-link--highlight">Telegram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Статьи и гайды</h1>
+            <p class="page-subtitle">Глубокие материалы про AI: обзоры, гайды, подборки, сравнения и личный опыт использования нейросетей.</p>
+        </div>
+    </section>
+
+    <!-- Search & Filters -->
+    <section class="section section--filters">
+        <div class="container">
+            <div class="filters-bar">
+                <div class="search-box search-box--large">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                    <input type="text" class="search-input" id="articlesSearch" placeholder="Поиск по статьям...">
+                </div>
+                <div class="filter-groups">
+                    <div class="filter-group">
+                        <span class="filter-label">Тип материала:</span>
+                        <div class="filter-tags" id="articleTypeFilters">
+                            <button class="filter-tag active" data-filter="all">Все</button>
+                            <button class="filter-tag" data-filter="Обзоры">Обзоры</button>
+                            <button class="filter-tag" data-filter="Гайды">Гайды</button>
+                            <button class="filter-tag" data-filter="Подборки">Подборки</button>
+                            <button class="filter-tag" data-filter="Сравнения">Сравнения</button>
+                            <button class="filter-tag" data-filter="Личный опыт">Личный опыт</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="section section--articles-list">
+        <div class="container">
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Articles will be loaded via JS -->
+            </div>
+            <div class="no-results" id="noArticleResults" style="display: none;">
+                <div class="no-results-icon">🔍</div>
+                <h3>Ничего не найдено</h3>
+                <p>Попробуйте изменить запрос или сбросить фильтры</p>
+                <button class="btn btn--secondary" id="resetArticleFilters">Сбросить фильтры</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">AI Hub</span>
+                    </a>
+                    <p class="footer-desc">Каталог AI-инструментов и большие разборы простым языком для СНГ-аудитории.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Разделы</h4>
+                    <ul class="footer-links">
+                        <li><a href="tools.html">Инструменты</a></li>
+                        <li><a href="articles.html">Статьи</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="contact.html">Telegram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://t.me/your_channel" target="_blank">Telegram-канал</a></li>
+                        <li><a href="mailto:hello@aihub.ru">hello@aihub.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 AI Hub. Все материалы созданы для помощи в освоении AI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data/tools.js"></script>
+    <script src="data/articles.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            renderArticlesPage();
+            initArticleFilters();
+        });
+    </script>
+</body>
+</html>

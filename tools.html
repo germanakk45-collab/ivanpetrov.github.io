@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-инструменты — AI Hub</title>
+    <meta name="description" content="Каталог AI-инструментов для работы, учебы и бизнеса. Нейросети для текста, изображений, видео, маркетинга и многого другого.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">AI Hub</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="tools.html" class="nav-link active">Инструменты</a></li>
+                    <li><a href="articles.html" class="nav-link">Статьи</a></li>
+                    <li><a href="about.html" class="nav-link">О проекте</a></li>
+                    <li><a href="contact.html" class="nav-link nav-link--highlight">Telegram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">AI-инструменты</h1>
+            <p class="page-subtitle">Каталог полезных нейросетей для работы, учебы и бизнеса. Выбирайте по категории, цене или задаче.</p>
+        </div>
+    </section>
+
+    <!-- Search & Filters -->
+    <section class="section section--filters">
+        <div class="container">
+            <div class="filters-bar">
+                <div class="search-box search-box--large">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                    <input type="text" class="search-input" id="toolsSearch" placeholder="Поиск по названию или описанию...">
+                </div>
+                <div class="filter-groups">
+                    <div class="filter-group">
+                        <span class="filter-label">Категория:</span>
+                        <div class="filter-tags" id="categoryFilters">
+                            <button class="filter-tag active" data-filter="all">Все</button>
+                            <button class="filter-tag" data-filter="Текст">Текст</button>
+                            <button class="filter-tag" data-filter="Изображения">Изображения</button>
+                            <button class="filter-tag" data-filter="Видео">Видео</button>
+                            <button class="filter-tag" data-filter="Презентации">Презентации</button>
+                            <button class="filter-tag" data-filter="Маркетинг">Маркетинг</button>
+                            <button class="filter-tag" data-filter="Бизнес">Бизнес</button>
+                            <button class="filter-tag" data-filter="Автоматизация">Автоматизация</button>
+                            <button class="filter-tag" data-filter="Дизайн">Дизайн</button>
+                            <button class="filter-tag" data-filter="Код">Код</button>
+                            <button class="filter-tag" data-filter="Обучение">Обучение</button>
+                            <button class="filter-tag" data-filter="Аудио">Аудио</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <span class="filter-label">Цена:</span>
+                        <div class="filter-tags" id="priceFilters">
+                            <button class="filter-tag active" data-filter="all">Все</button>
+                            <button class="filter-tag" data-filter="Бесплатно">Бесплатно</button>
+                            <button class="filter-tag" data-filter="Freemium">Freemium</button>
+                            <button class="filter-tag" data-filter="Платно">Платно</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section class="section section--tools-list">
+        <div class="container">
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Tools will be loaded via JS -->
+            </div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">🔍</div>
+                <h3>Ничего не найдено</h3>
+                <p>Попробуйте изменить запрос или сбросить фильтры</p>
+                <button class="btn btn--secondary" id="resetFilters">Сбросить фильтры</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">AI Hub</span>
+                    </a>
+                    <p class="footer-desc">Каталог AI-инструментов и большие разборы простым языком для СНГ-аудитории.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Разделы</h4>
+                    <ul class="footer-links">
+                        <li><a href="tools.html">Инструменты</a></li>
+                        <li><a href="articles.html">Статьи</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="contact.html">Telegram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://t.me/your_channel" target="_blank">Telegram-канал</a></li>
+                        <li><a href="mailto:hello@aihub.ru">hello@aihub.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 AI Hub. Все материалы созданы для помощи в освоении AI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data/tools.js"></script>
+    <script src="data/articles.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check for search query from homepage
+            const urlParams = new URLSearchParams(window.location.search);
+            const searchQuery = urlParams.get('search');
+            if (searchQuery) {
+                document.getElementById('toolsSearch').value = searchQuery;
+            }
+
+            renderToolsPage();
+            initToolFilters();
+        });
+    </script>
+</body>
+</html>
